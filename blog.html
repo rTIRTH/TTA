@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | TTA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background: #444;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .blog-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .blog-item {
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+        .blog-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease-in-out;
+        }
+        .blog-item:hover img {
+            transform: scale(1.1);
+        }
+        .blog-item .text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .blog-item:hover .text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blog/History</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Registration</a>
+        </nav>
+    </header>
+
+    <section class="blog-container">
+        <div class="blog-item">
+            <img src="images/great-wall.jpeg" alt="Great Wall of China">
+            <div class="text">
+                <h3>Great Wall of China</h3>
+                <p>Built over centuries to protect Chinese states from invasions, it stretches over 13,000 miles.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/petra.jpeg" alt="Petra">
+            <div class="text">
+                <h3>Petra, Jordan</h3>
+                <p>Carved into red sandstone cliffs, Petra was a thriving trade city of the Nabataean kingdom.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/colosseum.jpeg" alt="Colosseum">
+            <div class="text">
+                <h3>Colosseum, Italy</h3>
+                <p>A grand Roman amphitheater that hosted gladiator battles, capable of holding 50,000 spectators.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/machu-picchu.jpeg" alt="Machu Picchu">
+            <div class="text">
+                <h3>Machu Picchu, Peru</h3>
+                <p>An Incan citadel set high in the Andes Mountains, known for its advanced engineering.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/chichen-itza.jpeg" alt="Chichen Itza">
+            <div class="text">
+                <h3>Chichen Itza, Mexico</h3>
+                <p>An important Mayan city, home to the famous pyramid El Castillo, used for astronomical purposes.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/taj-mahal.jpeg" alt="Taj Mahal">
+            <div class="text">
+                <h3>Taj Mahal, India</h3>
+                <p>Built by Emperor Shah Jahan in memory of his wife, the Taj Mahal is a symbol of love and beauty.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/christ-red.jpeg" alt="Christ the Redeemer">
+            <div class="text">
+                <h3>Christ the Redeemer, Brazil</h3>
+                <p>This colossal statue of Jesus stands atop Mount Corcovado, overlooking Rio de Janeiro.</p>
+            </div>
+        </div>
+
+        <div class="blog-item">
+            <img src="images/angkor-wat.jpeg" alt="Angkor Wat">
+            <div class="text">
+                <h3>Angkor Wat, Cambodia</h3>
+                <p>The largest religious monument in the world, originally built as a Hindu temple and later a Buddhist site.</p>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
